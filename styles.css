@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    color: #000;
+    background: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    transition: cubic-bezier(0,.57,1,.71) 100ms;
+}
+
+#navbarContainer {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: #0003;
+    box-sizing: border-box;
+    height: 50px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 0 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    flex-wrap: nowrap;
+}
+
+.invis {
+    font-size: 0;
+}
+
+.navbarButton {
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+    color: #000;
+    font: inherit;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    background: none;
+    margin: 0;
+    padding: 10px 15px;
+    line-height: 30px;
+    vertical-align: bottom;
+    transition: ease-in-out 50ms;
+}
+
+.navbarButton:hover {
+    background: #fff5;
+    padding: 8px 15px 12px;
+}
+
+.navbarButton:active {
+    background: #0003;
+    padding: 12px 15px 8px;
+}
+
+.navbarSpacer {
+    height: 10px;
+}
+
+#cover {
+    display: flex;
+    height: 500px;
+    background: radial-gradient(#0004, #0000, #0000);
+}
+
+#movingTitle, #movingTitle2 {
+    text-shadow: 0 0 40px #000;
+    color: #0000;
+    line-height: 0;
+    font-weight: 500;
+    rotate: 7deg;
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    transition: cubic-bezier(0,.57,1,.71) 50ms;
+    position: relative;
+    left: 50%;
+    top: 55%;
+}
+
+#movingTitle {
+    text-shadow: 0 0 25px #fffa, 0 0 7px #fffa;
+    font-weight: 200;
+    color: #0003;
+    left: 50%;
+    top: 45%;
+}
+
+.content {
+    margin: 0 15%;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 600;
+    color: #000a;
+    hyphens: manual;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 200;
+    color: #000d;
+}
+
+#finalThesis {
+    font-weight: 400;
+    text-align: left;
+    color: #000;
+}
+
+.itemTitle {
+    font-size: 50px;
+    font-weight: 500;
+    color: #000d;
+}
+
+p {
+    font-size: 120%;
+    font-weight: 400;
+    color: #000a;
+}
+
+.song {
+    padding: 50px 0;
+}
+
+.listOdd {
+    background: #0001;
+}
+
+.listNumber {
+    font-size: 90px;
+    line-height: 0;
+}
+
+.albumCover {
+    width: 250px;
+    height: 250px;
+    border-radius: 3%;
+    object-fit: cover;
+    margin: 0 20px -5px 0;
+    filter: grayscale();
+}
+
+.songDesc {
+    display: inline-block;
+}
+
+a:not(.inlineLink) {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #999;
+}
+
+.followLink {
+    border-radius: 23%;
+    transition: ease-in-out 50ms;
+    opacity: 0.75;
+}
+
+.followLink:hover {
+    background: #fff5;
+    opacity: 1;
+}
+
+iframe {
+    width: 800px; 
+    border: none; 
+    box-shadow: 0 0 50px #000a; 
+    aspect-ratio: 3/4;
+}
+
+iframe.focusedIframe {
+    z-index: 10000;
+    box-shadow: none; 
+}
+
+#footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 80px 10%;
+    background: #222;
+    color: #fffc;
+}
+
+#footerTitle {
+    font-size: 40px;
+    font-weight: 800;
+}
